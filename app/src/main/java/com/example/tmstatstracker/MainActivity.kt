@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -29,9 +30,23 @@ class MainActivity : AppCompatActivity() {
         rvContacts.adapter = adapter
         // Set layout manager to position the items
         rvContacts.layoutManager = LinearLayoutManager(this)
-        // That's all!
     }
 
-    fun
+    fun onFilterButtonClicked(view: View){
+        val button =  view as Button
+        val tv_value = findViewById<View>(R.id.tv_cost_filter) as TextView
+        when(button.id){
+            R.id.bt_filter_clear ->{
+                tv_value.text = ""
+            }
+            R.id.bt_filter_del ->{
+                tv_value.text = tv_value.text.substring(0, tv_value.text.length - 1)
+            }
+            else ->{
+                tv_value.text = (tv_value.text as String).plus(button.text)
+            }
+        }
+
+    }
 }
 

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="24dp"
+    android:layout_height="30dp"
     android:layout_margin="6dp"
     android:background="@color/white"
     android:id="@+id/cl_card_item">
@@ -16,7 +16,8 @@
         android:text="Test-Test"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
         android:id="@+id/tv_card_value"
@@ -25,7 +26,9 @@
         android:layout_marginStart="16dp"
         android:text="24"
         android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@id/tv_card_name"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
