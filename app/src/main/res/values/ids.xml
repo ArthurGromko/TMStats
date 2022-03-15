@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="tv_card_name" />
+    <item type="id" name="tv_card_value" />
+    <item type="id" name="rv_project_cards" />
+    <item type="id" name="cl_card_item" />
+</resources>
